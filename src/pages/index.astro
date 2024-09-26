@@ -134,29 +134,37 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
   /* ===== Profile Container ===== */
   .profile-container {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-direction: column; /* Default for mobile */
+  }
+
+  /* Media query for larger screens (desktop) */
+  @media (min-width: 768px) {
+      .profile-container {
+          flex-direction: row; /* Change to row for desktop */
+      }
   }
 
   .image-wrapper {
-    flex-shrink: 0;
+      flex-shrink: 0;
   }
 
   .profile-image {
-    width: 180px;
-    height: auto;
-    border-radius: 50%;
+      width: 180px;
+      height: auto;
+      border-radius: 50%;
   }
 
   .description {
-    flex-grow: 1;
+      flex-grow: 1;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pb-6 pt-12;
+      @apply pb-6 pt-12;
   }
   #featured h2,
   #recent-posts h2 {
