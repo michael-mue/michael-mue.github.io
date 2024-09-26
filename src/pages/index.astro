@@ -140,15 +140,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       flex-direction: column; /* Default for mobile */
   }
 
-  /* Media query for larger screens (desktop) */
-  @media (min-width: 768px) {
-      .profile-container {
-          flex-direction: row; /* Change to row for desktop */
-      }
-  }
-
   .image-wrapper {
       flex-shrink: 0;
+      order: -1; /* Move the image to the top by default */
   }
 
   .profile-image {
@@ -161,6 +155,21 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       flex-grow: 1;
   }
 
+  /* Media query for larger screens (desktop) */
+  @media (min-width: 768px) {
+      .profile-container {
+          flex-direction: row; /* Change to row for desktop */
+      }
+
+      .image-wrapper {
+          order: 0; /* Reset order for desktop */
+      }
+
+      .description {
+          order: 1;
+      }
+  }
+
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
@@ -168,9 +177,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #featured h2,
   #recent-posts h2 {
-    @apply text-2xl font-semibold tracking-wide;
+      @apply text-2xl font-semibold tracking-wide;
   }
   .all-posts-btn-wrapper {
-    @apply my-8 text-center;
+      @apply my-8 text-center;
   }
 </style>
