@@ -30,7 +30,7 @@ function entryToBibTeX(entry) {
   return `@${entry.entryType}{${entry.citationKey},\n${tagStrings}\n}`;
 }
 
-const bibRaw = fs.readFileSync(new URL("./publications.bib", import.meta.url));
+const bibRaw = fs.readFileSync(new URL("../../public/assets/publications.bib", import.meta.url));
 const entries = bibtexParse.toJSON(String(bibRaw));
 
 export default entries.map((entry) => {
