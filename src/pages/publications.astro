@@ -1,0 +1,30 @@
+---
+import { SITE } from "@config";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import PublicationCard from "@components/PublicationCard.astro";
+import publications from "../data/parseBib.js";
+---
+
+<Layout title={`Publications | ${SITE.title}`}>
+  <Header activeNav="publications" />
+  <Main pageTitle="Publications" pageDesc="A list of published works.">
+    <ul class="cards">
+      {publications.map((pub) => (
+        <li>
+          <PublicationCard
+            title={pub.title}
+            authors={pub.authors}
+            year={pub.year}
+            link={pub.link}
+            cite={pub.cite}
+            venue={pub.venue}
+          />
+        </li>
+      ))}
+    </ul>
+  </Main>
+  <Footer />
+</Layout>

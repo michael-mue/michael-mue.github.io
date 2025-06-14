@@ -1,0 +1,27 @@
+---
+import PublicationCard from './PublicationCard.jsx';
+
+const {
+  authors,
+  title,
+  venue,
+  year,
+  pdf,
+  cite,
+  link,
+  children
+} = Astro.props;
+---
+
+<PublicationCard
+  authors={authors}
+  title={title}
+  venue={venue}
+  year={year}
+  pdf={pdf}
+  cite={cite}
+  link={link}
+  client:load
+>
+  {children}
+</PublicationCard>
