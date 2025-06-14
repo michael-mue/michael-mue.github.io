@@ -27,9 +27,15 @@ export const LOGO_IMAGE = {
 
 export const SOCIALS: SocialObjects = [
   {
-    name: "Github",
-    href: "https://github.com/michael-mue",
-    linkTitle: ` ${SITE.title} on Github`,
+    name: "Mail",
+    href: "mailto:michael.m.mueller@uibk.ac.at",
+    linkTitle: `Send an email to ${SITE.title}`,
+    active: true,
+  },
+  {
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/michael-markus-mueller/",
+    linkTitle: `${SITE.title} on LinkedIn`,
     active: true,
   },
   {
@@ -39,76 +45,22 @@ export const SOCIALS: SocialObjects = [
     active: true,
   },
   {
-    name: "Facebook",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Facebook`,
-    active: false,
-  },
-  {
-    name: "Instagram",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Instagram`,
-    active: false,
-  },
-  {
-    name: "LinkedIn",
-    href: "https://www.linkedin.com/in/michael-markus-mueller/",
-    linkTitle: `${SITE.title} on LinkedIn`,
-    active: true,
-  },
-  {
-    name: "Mail",
-    href: "mailto:michael.m.mueller@uibk.ac.at",
-    linkTitle: `Send an email to ${SITE.title}`,
+    name: "Github",
+    href: "https://github.com/michael-mue",
+    linkTitle: ` ${SITE.title} on Github`,
     active: true,
   },
   {
     name: "Twitter",
     href: "https://x.com/michael_mmller",
     linkTitle: `${SITE.title} on Twitter`,
+    active: false,
+  },
+  {
+    name: "GoogleScholar",
+    href: "https://scholar.google.com/citations?user=7q6rv7EAAAAJ&hl=de",
+    linkTitle: `${SITE.title} on Google Scholar`,
     active: true,
-  },
-  {
-    name: "Twitch",
-    href: "https://x.com/michael_mmller",
-    linkTitle: `${SITE.title} on Twitch`,
-    active: false,
-  },
-  {
-    name: "YouTube",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on YouTube`,
-    active: false,
-  },
-  {
-    name: "WhatsApp",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on WhatsApp`,
-    active: false,
-  },
-  {
-    name: "Snapchat",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Snapchat`,
-    active: false,
-  },
-  {
-    name: "Pinterest",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Pinterest`,
-    active: false,
-  },
-  {
-    name: "TikTok",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on TikTok`,
-    active: false,
-  },
-  {
-    name: "CodePen",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on CodePen`,
-    active: false,
   },
   {
     name: "Discord",
@@ -129,20 +81,8 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
-    name: "Steam",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Steam`,
-    active: false,
-  },
-  {
-    name: "Telegram",
-    href: "https://github.com/satnaing/astro-paper",
-    linkTitle: `${SITE.title} on Telegram`,
-    active: false,
-  },
-  {
     name: "Mastodon",
-    href: "https://github.com/satnaing/astro-paper",
+    href: "https://fosstodon.org/@michaelmueller",
     linkTitle: `${SITE.title} on Mastodon`,
     active: false,
   },
