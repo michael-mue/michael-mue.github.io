@@ -1,5 +1,5 @@
 ---
-import PublicationCard from './PublicationCardStyle.jsx';
+import PublicationCardStyle from './PublicationCard.jsx';
 
 const {
   authors,
@@ -13,7 +13,7 @@ const {
 } = Astro.props;
 ---
 
-<PublicationCard
+<PublicationCardStyle
   authors={authors}
   title={title}
   venue={venue}
@@ -24,4 +24,4 @@ const {
   client:load
 >
   {children}
-</PublicationCard>
+</PublicationCardStyle>

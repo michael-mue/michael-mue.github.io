@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function PublicationCard({
+export default function PublicationCardStyle({
   authors,
   title,
   venue,
